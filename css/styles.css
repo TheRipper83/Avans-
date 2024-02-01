@@ -1,14 +1,17 @@
-.navbar {
+navbar {
     display: flex;
     background-color: #aaaaaaa5;
-  }
-  navbar a {
+}
+navbar a {
     color: white;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
-  }
-  .navbar a:hover {
+}
+navbar a:hover {
     background-color: #ddd;
     color: black;
-  }
+}
+section.introduce {
+  display: flex;
+}
