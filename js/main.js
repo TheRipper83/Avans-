@@ -1,6 +1,3 @@
-
-
-
 $(".inner-switch").on("click", function() {
     if($("body").hasClass("dark")) {
         $("body, .content").removeClass("dark");
