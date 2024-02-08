@@ -46,7 +46,7 @@ section.introduce {
   }
   .media{
     display: flex;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
     background-color: #aaaaaaa5;
     width: 100%;
