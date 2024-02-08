@@ -1,3 +1,27 @@
+body{
+    text-align:center;
+    background-color: lightblue
+    }
+    img{
+      height:140px;
+        width:140px; 
+    }
+    h1{
+      color: lightgreen
+    }
+    .darkH1{
+    color: #1abc9c
+    }
+    .mode {
+      float:right;
+    }
+    .change {
+      cursor: pointer;
+      border: 5px solid #555;
+      border-radius: 40%;
+      width: 32px;
+      height: 32px;
+    }
 navbar {
     display: flex;
     background-color: #aaaaaaa5;
@@ -15,3 +39,40 @@ navbar a:hover {
 section.introduce {
   display: flex;
 }
+
+.med{
+    display: flex;
+    flex-direction: column;
+  }
+  .media{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    background-color: #aaaaaaa5;
+    width: 100%;
+    padding: 20px;
+  }
+  .mediaDark{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    background-color: #1F1B24;
+    width: 100%;
+    padding: 20px;
+  }
+  .media a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  .mediaDark a:hover {
+    background-color: #121212;
+    color: black;
+  }
+  .media img{
+    width: 100px;
+    height: 100px;
+  }
+  .mediaDark img{
+    width: 100px;
+    height: 100px;
+  }
