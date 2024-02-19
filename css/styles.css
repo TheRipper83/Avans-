@@ -2,19 +2,13 @@ body{
   text-align:center;
   background-color: lightblue
 }
-img{
-  height:140px;
-  width:140px; 
-}
+
 a {
   text-decoration: none !important;
   impo
 }
 .darkH1{
   color: #1abc9c
-}
-.mode {
-  float:right;
 }
 .change {
       cursor: pointer;
@@ -37,6 +31,34 @@ nav a:hover {
     background-color: #ddd;
     color: black;
 }
+.fancy {
+  --b: 6px;   /* control the border thickness */
+  --w: 80px;  /* control the width of the line*/
+  --g: 15px;  /* control the gap */
+  --c: #0B486B;
+  width: fit-content;
+  padding: 0 1em;
+  line-height: 1.6em;
+  border: 1px solid;
+  color: #fff;
+  background: 
+    conic-gradient(from 45deg at left ,var(--c) 25%,#0000 0) 0,
+    conic-gradient(from -135deg at right,var(--c) 25%,#0000 0) 100%;
+  background-size: 51% 100%;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-image: 
+     linear-gradient(
+       #0000      calc(50% - var(--b)/2),
+       var(--c) 0 calc(50% + var(--b)/2),
+       #0000    0) 
+    1/0 var(--w)/calc(var(--w) + var(--g));
+  margin-inline: auto;
+  --w: 50vw;
+  --c: #8A9B0F;
+  --b:4px;
+  --g:-5px
+}
 section.introduce {
   display: flex;
   padding: 0 30px;
@@ -55,41 +77,43 @@ section.introduce h2 {
 section.introduce h3 {
   font-size: 20px;
 }
-.med{
-    display: flex;
-    flex-direction: column;
-}
+
 .media{
     display: flex;
-    gap: 50px;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #aaaaaaa5;
-    width: 100%;
     padding: 20px;
 }
 .mediaDark{
     display: flex;
-    gap: 100px;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #1F1B24;
-    width: 100%;
     padding: 20px;
 }
-.media a:hover {
-    background-color: #ddd;
-    color: black;
+.media .socialeachone {
+
 }
-.mediaDark a:hover {
-    background-color: #121212;
-    color: black;
+.media .socialeachone h2 {
+  color: black;
 }
-.media img{
-  width: 50px;
-  height: 50px;
+.media .socialeachone svg {
+  font-size: 30px;
+  color: white;
 }
-.mediaDark img{
-  width: 50px;
-  height: 50px;
+.media .socialeachone svg:hover {
+  font-size: 30px;
+  color: black;
+}
+.mediaDark .socialeachone h2 {
+  color: black;
+}
+.mediaDark .socialeachone svg {
+  font-size: 30px;
+  color: white;
+}
+.mediaDark .socialeachone svg:hover {
+  font-size: 30px;
+  color: black;
 }
 .skill{
   display: flex;
