@@ -206,10 +206,13 @@ footer {
   background-color: rgba(210,77,87,255);
   height: 100px;
 }
-
-.project{
-  
+footer .copyrightdetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  font-weight: 600;
 }
+
 .project img{
   width: 100%;
   height: 400px;
