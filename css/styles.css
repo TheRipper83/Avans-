@@ -132,7 +132,6 @@ section.introduce h3 {
 .media{
     display: flex;
     justify-content: space-around;
-    background-color: #aaaaaaa5;
     padding: 20px;
 }
 .mediaDark{
