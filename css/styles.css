@@ -34,6 +34,53 @@ nav a:hover {
     border-radius: 10px;
     color: black !important;
 }
+.introducecard {
+  position: relative !important;
+  max-width : 300px;
+  height : 300px !important;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  display : flex !important;
+  flex-direction : column !important;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.introducecard:hover {
+  height: 450px !important;
+}
+.introducecard img {
+  height: 500px !important;
+  width: 500px !important;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+  border-radius : 15px;
+}
+.introducecard .card-body {
+  position : relative;
+  top : -40px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+.introducecard:hover img {
+  height: 500px !important;
+  width: 500px !important;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+  border-radius : 15px;
+}
+.introducecard:hover .card-body {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s; 
+}  
 .fancy {
   --b: 6px;   /* control the border thickness */
   --w: 80px;  /* control the width of the line*/
@@ -159,3 +206,4 @@ footer {
   background-color: rgba(210,77,87,255);
   height: 100px;
 }
+
