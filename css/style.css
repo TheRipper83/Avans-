@@ -1,21 +1,9 @@
-body{
-  text-align:center;
-  background-color: lightblue
+body {
+    text-align:center;
+    /* background-color: lightblue !important; */
 }
-
 a {
-  text-decoration: none !important;
-}
-
-.darkH1{
-  color: #1abc9c
-}
-.change {
-      cursor: pointer;
-      border: 5px solid #555;
-      border-radius: 40%;
-      width: 32px;
-      height: 32px;
+    text-decoration: none !important;
 }
 nav {
   display: flex;
@@ -34,53 +22,6 @@ nav a:hover {
     border-radius: 10px;
     color: black !important;
 }
-.introducecard {
-  position: relative !important;
-  max-width : 300px;
-  height : 300px !important;  
-  background-color : #fff;
-  margin : 30px 10px;
-  padding : 20px 15px;
-  display : flex !important;
-  flex-direction : column !important;
-  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
-  transition : 0.3s ease-in-out;
-  border-radius : 15px;
-}
-.introducecard:hover {
-  height: 450px !important;
-}
-.introducecard img {
-  height: 500px !important;
-  width: 500px !important;
-  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
-  z-index : 1;
-  border-radius : 15px;
-}
-.introducecard .card-body {
-  position : relative;
-  top : -40px;
-  padding : 10px 15px;
-  color : #111;
-  text-align : center;
-  visibility : hidden;
-  opacity : 0;
-  transition : 0.3s ease-in-out;
-    
-}
-.introducecard:hover img {
-  height: 500px !important;
-  width: 500px !important;
-  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
-  z-index : 1;
-  border-radius : 15px;
-}
-.introducecard:hover .card-body {
-   margin-top : 30px;
-   visibility : visible;
-   opacity : 1;
-   transition-delay: 0.2s; 
-}  
 .fancy {
   --b: 6px;   /* control the border thickness */
   --w: 80px;  /* control the width of the line*/
@@ -109,31 +50,86 @@ nav a:hover {
   --b:4px;
   --g:-5px
 }
+.introducecard {
+    position: relative !important;
+    max-width : 300px;
+    height : 300px !important;  
+    background-color : #fff;
+    margin : 30px 10px;
+    padding : 20px 15px;
+    display : flex !important;
+    flex-direction : column !important;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+    align-items: center;
+}
+.introducecard:hover {
+    height: 450px !important;
+}
+.introducecard img {
+    height: 500px !important;
+    width: 500px !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.introducecard .card-body {
+    position : relative;
+    top : -40px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;    
+}
 
-section.introduce {
+.introducecard:hover img {
+    height: 200px !important;
+    width: 200px !important;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+    border-radius : 15px;
+}
+.introducecard:hover .card-body {
+     margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s; 
+}
+.introduce {
   display: flex;
   justify-content: space-between;
   padding: 0 30px;
 }
-section.introduce a {
+.introduce a {
   text-decoration: none;
   color: #121212;
 }
-section.introduce img {
-  height: 200px;
-  width: 200px;
-}
-section.introduce h2 {
+.introduce img {
+    height: 200px !important;
+    width: 200px !important;
+  }
+.introduce h2 {
   font-size: 25px;
 }
-section.introduce h3 {
+.introduce h3 {
   font-size: 20px;
 }
-
+.project img{
+    width: 100%;
+    height: 400px;
+}
 .media{
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    background-color: #818181;
 }
 .mediaDark{
     display: flex;
@@ -164,12 +160,25 @@ section.introduce h3 {
   color: black;
 }
 .skills-section{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
 }
-.row{
+footer {
+    background-color: rgba(210,77,87,255) !important;
+
+}
+footer .copyrightdetails {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  font-weight: 600;
+}
+
+
+/* -- SVG CSS -- */
+.rowv{
   width:100%;
   height:5vh;
   padding:0;
@@ -179,9 +188,6 @@ section.introduce h3 {
   flex-direction: column;
   position:relative;
 }
-
-/* -- SVG CSS -- */
-
 .svg-separator{
   display: block;
   background: 0 0;
@@ -201,19 +207,4 @@ section.introduce h3 {
 .sep1{
   transform: translateY(-100%) translateY(2px) scale(1,1);
   transform-origin: top;
-}
-footer {
-  background-color: rgba(210,77,87,255);
-  height: 100px;
-}
-footer .copyrightdetails {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 20px;
-  font-weight: 600;
-}
-
-.project img{
-  width: 100%;
-  height: 400px;
 }
